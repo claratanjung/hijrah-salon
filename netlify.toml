@@ -1,6 +1,10 @@
+[build]
+  command = "cd backend && npm install"
+  publish = "."
+
 [functions]
   directory = "netlify"
-  external_node_modules = ["express"]
+  external_node_modules = ["express", "dotenv", "mysql2", "jsonwebtoken"]
   node_bundler = "esbuild"
 
 [[redirects]]
